@@ -175,7 +175,7 @@ $^j::
         WinMove 1163, 9, 768, 1032, "ahk_id " originalHwnd
 
         ; Wait 15 seconds after final resizing.
-        if !WaitMs(15000)
+        if !WaitMs(21000)
             return
 
         ; ----------------------------------------------------
@@ -187,7 +187,7 @@ $^j::
         Sleep 400
         Click 337, 622
 
-        if !WaitMs(7000)
+        if !WaitMs(7500)
             return
 
         WinActivate "ahk_id " originalHwnd
@@ -195,7 +195,7 @@ $^j::
         Sleep 400
         Click 1450, 622
 
-        if !WaitMs(7000)
+        if !WaitMs(7500)
             return
 
         WinActivate "ahk_id " incognitoHwnd
@@ -203,7 +203,7 @@ $^j::
         Sleep 400
         Click 180, 715
 
-        if !WaitMs(7000)
+        if !WaitMs(7500)
             return
 
         WinActivate "ahk_id " originalHwnd
